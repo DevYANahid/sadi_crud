@@ -17,3 +17,4 @@ use App\Http\Controllers\BookController;
 
 Route::get('/',[BookController::class,"index"])->name('product.index');
 Route::get('/create',[BookController::class,"create"])->name('product.create');
+Route::post('product/store',[BookController::class,"store"])->name('product.store');
